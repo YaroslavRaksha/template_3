@@ -1,0 +1,552 @@
+@mixin os {
+  font-family: 'Oswald', sans-serif;
+}
+@mixin op {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  &__nav {
+    padding-top: 20px;
+    .nav__img {
+      cursor: pointer;
+      width: 60px;
+    }
+  }
+
+  &__title {
+    padding-top: 90px;
+    color: #fff;
+    font-size: 64px;
+    font-weight: 500;
+    @include os;
+    text-transform: uppercase;
+  }
+
+  &__etc {
+    padding-top: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    @include os;
+    text-transform: uppercase;
+  }
+
+  &__26 {
+    padding-top: 170px;
+    .block {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: #F7F7F7;
+      @include os;
+      text-transform: uppercase;
+      &__number {
+        color: #F7654A;
+        font-size: 72px;
+        font-weight: 500;
+      }
+      &__text {
+        padding-top: 25px;
+        color: #000;
+        font-size: 36px;
+        font-weight: 500;
+      }
+      &__etc {
+        padding-top: 10px;
+        color: gray;
+        font-size: 18px;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+.projects {
+  &__title {
+    padding-top: 90px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+    @include os;
+    text-transform: uppercase;
+  }
+  &__img {
+    padding-top: 55px;
+  }
+  .block {
+    &__line {
+      margin-top: 40px;
+      height: 6px;
+      width: 55px;
+      background-color: #F7654A;
+    }
+    &__title {
+      padding-top: 15px;
+      @include os;
+      font-weight: 500;
+      font-size: 24px;
+    }
+    &__main {
+      padding-top: 20px;
+      padding-right: 10px;
+      @include op;
+      font-size: 16px;
+      color: gray;
+    }
+  }
+}
+
+.request-line {
+  padding-top: 120px;
+  .line {
+    padding: 30px 0;
+    background-color: #F7654A;
+  }
+  .block__title {
+    @include os;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .block__etc {
+    padding-top: 15px;
+    @include os;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .block__button {
+    padding: 14px 30px;
+    background-color: #fff;
+    .button__text {
+      @include os;
+      padding-left: 15px;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.job {
+  .block {
+    margin-top: 15px;
+    background-color: #F7F7F7;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  &__title {
+    padding-top: 135px;
+    padding-bottom: 50px;
+    @include os;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  &__desc {
+    padding-top: 25px;
+    @include os;
+    font-weight: 500;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+}
+
+.images {
+  padding-top: 150px;
+  .img {
+    padding: 0px;
+  }
+}
+
+.answers {
+  padding-bottom: 135px;
+  .arrow {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 11px solid #F7654A;
+    transition: 0.2s linear;
+  }
+  .rotate {
+    transform: rotate(90deg);
+  }
+  &__title {
+    padding-top: 135px;
+    padding-bottom: 50px;
+    @include os;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .question {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    @include os;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #F7654A;
+    cursor: pointer;
+  }
+  .answer {
+    @include op;
+    font-weight: 400;
+    font-size: 16px;
+    color: gray;
+  }
+}
+
+.our-partners {
+  .line {
+    background-color: #404149;
+  }
+  .title {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    @include os;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .partners__img {
+    padding-bottom: 50px;
+  }
+  .firm__img {
+    padding: 15px;
+  }
+}
+
+.reviews {
+  .review {
+    padding: 30px;
+  }
+  .title {
+    padding-top: 130px;
+    padding-bottom: 60px;
+    @include os;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .text {
+    padding-top: 20px;
+    @include op;
+    font-size: 14px;
+    color: gray;
+  }
+  .etc {
+    padding-top: 25px;
+    @include os;
+    font-weight: 500;
+    font-size: 21px;
+  }
+}
+
+.contacts {
+  padding-top: 60px;
+  .block {
+    padding-top: 35px;
+  }
+  .our-contacts {
+    padding-bottom: 30px;
+    padding-top: 130px;
+    @include os;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .title {
+    padding-top: 15px;
+    @include os;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: gray;
+  }
+  .text {
+    padding-top: 10px;
+    @include os;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+.footer {
+  padding-top: 70px;
+  color: #fff;
+  text-transform: uppercase;
+  &__line {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #404149;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .projects {
+    .block__main {
+      padding-right: 0px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .header {
+    &__26 {
+      padding-top: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .header {
+    &__title {
+      padding-top: 40px;
+    }
+    &__26 {
+      padding-top: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .header {
+    &__title {
+      font-size: 48px;
+    }
+    &__26 {
+      .block__number {
+        font-size: 52px;
+      }
+      .block__text {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    &__etc {
+      padding-top: 15px;
+    }
+    &__26 {
+      .block {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__text {
+          padding-top: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .header {
+    br {
+      display: none;
+    }
+    &__title {
+      padding-top: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    &__title {
+      padding-top: 80px;
+      font-size: 36px;
+    }
+    &__26 {
+      padding-top: 140px;
+    }
+  }
+  .request-line {
+    .block__title {
+      font-size: 38px;
+    }
+    .block__etc {
+      font-size: 20px;
+    }
+  }
+  .job {
+    &__desc {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 889px) {
+  .header {
+    &__26 {
+      padding-top: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .request-line {
+    .block__title {
+      font-size: 36px;
+    }
+    .block__etc {
+      font-size: 18px;
+    }
+    .block__button {
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects {
+    .block {
+      padding-bottom: 50px;
+    }
+  }
+  .request-line {
+    padding-top: 70px;
+    .block__button {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    &__title {
+      font-size: 32px;
+    }
+    &__26 {
+      padding-top: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .header {
+    &__title {
+      padding-top: 50px;
+      font-size: 28px;
+    }
+    &__26 {
+      padding-top: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .answers {
+    .block__questions {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .question {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .header {
+    &__title {
+      font-size: 22px;
+    }
+    &__etc {
+      display: none;
+    }
+    &__26 {
+      padding-top: 75px;
+    }
+  }
+  .projects {
+    &__title {
+      padding-top: 70px;
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .header {
+    &__title {
+      display: none;
+    }
+    &__nav {
+      padding-top: 50px;
+      .nav__img {
+        width: 50px;
+      }
+    }
+    &__26 {
+      padding-top: 100px;
+    }
+  }
+  .projects {
+    &__title {
+      padding-top: 50px;
+      font-size: 22px;
+    }
+  }
+  .request-line {
+    .block__title {
+      font-size: 30px;
+    }
+    .block__etc {
+      font-size: 14px;
+    }
+  }
+  .job {
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .images {
+    padding-top: 80px;
+  }
+  .answers {
+    padding-bottom: 85px;
+    &__title {
+      padding-top: 85px;
+      font-size: 30px;
+    }
+    .question {
+      font-size: 18px;
+    }
+  }
+  .our-partners {
+    .title {
+      font-size: 30px;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    .partners__img {
+      padding-bottom: 30px;
+    }
+  }
+  .reviews {
+    .title {
+      font-size: 30px;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 403px) {
+  .header {
+    &__26 {
+      padding-top: 65px;
+    }
+  }
+}
+
